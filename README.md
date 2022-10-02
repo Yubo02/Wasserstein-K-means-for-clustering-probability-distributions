@@ -21,7 +21,7 @@ Clustering is an important exploratory data analysis technique to group objects 
 
 # This repository
 ## Purpose
-The codes are considered for one case on dataset MNIST. The codes for other datasets are similar. We give the codes for two methods we proposed: Wasserstein SDP (W-SDP) and Distance-based Wasserstein K-means(D-WKM).
+The codes are considered for one case on dataset MNIST. The codes for other datasets are similar. We give the codes for two methods we proposed: Wasserstein SDP (W-SDP) and Distance-based Wasserstein K-means (D-WKM).
 
 ## Dependencies for Python
 The core dependencies are:
