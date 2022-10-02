@@ -8,7 +8,7 @@ The codes are sourced from the following paper:
   https://arxiv.org/abs/2209.06975
   
   
-The benchmark clustering data set and codes for calculating Sinkhorn divergence are sourced from the following resources:
+The benchmark clustering data set and codes for calculating Sinkhorn divergence are sourced from the following resource:
 
 - https://github.com/GiulsLu/Sinkhorn-Barycenters
 
