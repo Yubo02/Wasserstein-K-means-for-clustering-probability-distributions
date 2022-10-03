@@ -43,4 +43,6 @@ The files in this repository are:
 
 - Main.py: The main Python code to get the results for D-WKM and the distance matrix for W-SDP.
 - DWKM_utils.py: Provides the functions needed to calculate Bregman Wasserstein barycenter and related algorithms for D-WKM.
-- WSDP.m: The MATLAB code to run SDP on the distance matrix.
+- WSDP.m: The MATLAB code to run SDP on the distance matrix and get results for W-SDP.
+- kmeans_sdp_2.m: The MATLAB code for SDP.
+- kmeansplus.m: The MATLAB code to run K-means+.
