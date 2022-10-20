@@ -110,7 +110,7 @@ kmeans_iteration_max = 100
 groups_ind0=[]
 num_groups = len(centroids_distrib)
 
-groups,groups_ind = partition_into_groups(distrib, centroids_distrib, num_groups,reg,rescale)
+groups,groups_ind = partition_into_groups_withind(distrib, centroids_distrib, num_groups,reg,rescale)
 print(groups_ind)
 
 while kmeans_iteration < kmeans_iteration_max and groups_ind!=groups_ind0:

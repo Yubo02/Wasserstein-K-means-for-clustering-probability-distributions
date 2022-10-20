@@ -94,4 +94,22 @@ def sinkhorn_divergence_cluster(groups_ind_0_0,ii,Di):
 
 
 
+# Assign the distribution to the nearest cluster based on the cetroids
+
+def partition_into_groups_withind(data, centroids, num_groups, reg, rescale):
+    groups = [[] for i in range(num_groups)]
+    groups_ind = [[] for i in range(num_groups)]
+    for i in range(len(data)):
+        min_dist = 100
+        for k in range(len(centroids)):
+            dist = sinkhorn_divergence(centroids[k].weights, centroids[k].support, \
+                                       data[i].weights, data[i].support, eps=reg)[0]
+
+            if dist < min_dist:
+                tmp_c = k
+                min_dist = dist
+
+        groups[tmp_c].append(data[i])
+        groups_ind[tmp_c].append(i)
+    return groups,groups_ind
 
